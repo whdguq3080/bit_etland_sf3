@@ -4,7 +4,10 @@ import java.util.List;
 
 import com.bit_etland.web.domain.EmployeeDTO;
 
+import org.springframework.stereotype.Component;
 
+
+@Component
 public interface EmployeeMapper {
 	public void insertEmployee(EmployeeDTO emp);
 	public List<EmployeeMapper> selectEmployeesList(); 

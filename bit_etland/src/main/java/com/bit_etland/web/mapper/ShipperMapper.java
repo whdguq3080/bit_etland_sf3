@@ -1,7 +1,10 @@
 package com.bit_etland.web.mapper;
 
 import java.util.List;
+import org.springframework.stereotype.Component;
 
+
+@Component
 public interface ShipperMapper {
 	public void insertShipper(ShipperMapper cus);
 	public List<ShipperMapper> selectShipperlist(); 

@@ -5,7 +5,10 @@ import java.util.List;
 import com.bit_etland.web.domain.ImageDTO;
 import com.bit_etland.web.proxy.Proxy;
 
+import org.springframework.stereotype.Component;
 
+
+@Component
 public interface ImageService {
 	public void addImage(ImageDTO img);
 	

@@ -6,7 +6,10 @@ import com.bit_etland.web.domain.CustomerDTO;
 import com.bit_etland.web.domain.ImageDTO;
 import com.bit_etland.web.proxy.Proxy;
 
+import org.springframework.stereotype.Component;
 
+
+@Component
 public interface ImageMapper {
 	public void insertImage(ImageDTO img);
 	

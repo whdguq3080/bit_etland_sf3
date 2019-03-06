@@ -1,10 +1,12 @@
-/*package com.bit_etland.web.service;
+package com.bit_etland.web.service;
 
 import java.util.List;
 
-import domain.CategoryDTO;
-import proxy.Proxy;
+import org.springframework.stereotype.Component;
 
+import com.bit_etland.web.domain.CategoryDTO;
+import com.bit_etland.web.proxy.Proxy;
+@Component
 public interface CategoryService {
 	public void registCategorie(CategoryDTO cat);
 	public List<?> bringCategorieList(Proxy pagePxy); 
@@ -15,4 +17,3 @@ public interface CategoryService {
 	public void modifyCategorie(CategoryDTO cat);
 	public void removeCategorie(CategoryDTO cat);
 }
-*/

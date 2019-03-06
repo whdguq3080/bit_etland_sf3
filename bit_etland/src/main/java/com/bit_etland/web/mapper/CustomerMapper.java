@@ -7,7 +7,10 @@ import java.util.Map;
 import com.bit_etland.web.domain.CustomerDTO;
 import com.bit_etland.web.proxy.Proxy;
 
+import org.springframework.stereotype.Component;
 
+
+@Component
 public interface CustomerMapper {
 	public void insertCustomer(CustomerDTO cus);
 	public CustomerDTO selectCustomers(CustomerDTO cus);

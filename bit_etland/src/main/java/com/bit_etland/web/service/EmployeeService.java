@@ -3,8 +3,10 @@ package com.bit_etland.web.service;
 import java.util.List;
 
 import com.bit_etland.web.domain.EmployeeDTO;
+import org.springframework.stereotype.Component;
 
 
+@Component
 public interface EmployeeService {
 	public void registEmployee(EmployeeDTO emp);
 	public List<EmployeeDTO> bringEmployeesList(); 

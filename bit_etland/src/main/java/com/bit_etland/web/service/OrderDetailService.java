@@ -4,8 +4,10 @@ import java.util.List;
 
 import com.bit_etland.web.domain.OrderDetailDTO;
 
+import org.springframework.stereotype.Component;
 
 
+@Component
 public interface OrderDetailService {
 	public void registOrderDetail(OrderDetailDTO ord);
 	public List<OrderDetailDTO> bringOrderDetailList(); 

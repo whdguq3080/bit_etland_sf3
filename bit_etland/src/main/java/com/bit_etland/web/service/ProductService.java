@@ -4,7 +4,10 @@ import java.util.List;
 
 import com.bit_etland.web.domain.ProductDTO;
 import com.bit_etland.web.proxy.Proxy;
+import org.springframework.stereotype.Component;
 
+
+@Component
 public interface ProductService {
 	public void registProduct(ProductDTO pro);
 	public List<ProductDTO> bringProductList(Proxy pxy); 
