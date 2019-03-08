@@ -1,6 +1,5 @@
 package com.bit_etland.web.mapper;
 
-
 import java.util.List;
 import java.util.Map;
 
@@ -8,7 +7,6 @@ import com.bit_etland.web.domain.CustomerDTO;
 import com.bit_etland.web.proxy.Proxy;
 
 import org.springframework.stereotype.Component;
-
 
 @Component
 public interface CustomerMapper {

@@ -26,11 +26,11 @@ public class HomeController{
 			HttpServletRequest request){
 		logger.info("\n --------- Welcome {} !! ----------","Home");
 		String ctx = request.getContextPath();
-		session.setAttribute("ctx",request.getContextPath());
+		session.setAttribute("ctx",ctx);
 		session.setAttribute("css", ctx+"/resources/css/");
 		session.setAttribute("js", ctx+"/resources/js/");
 		session.setAttribute("image", ctx+"/resources/img/");
 		session.setAttribute("time",new SimpleDateFormat("yyyy-MM-dd hh:mm").format(new Date()));
-		return "home/main";
+		return "public:home/main.tiles";
 	}
 }
