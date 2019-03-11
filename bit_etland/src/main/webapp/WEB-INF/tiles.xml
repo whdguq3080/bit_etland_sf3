@@ -6,7 +6,7 @@
   <definition name="public" template="/WEB-INF/views/layouts/classic.jsp">
     <put-attribute name="top" value="/WEB-INF/views/home/top.jsp" />
     <put-attribute name="nav" value="" />
-    <put-attribute name="content" value="" />
+    <put-attribute name="content" value="/WEB-INF/views/customer/update.jsp" />
     <put-attribute name="bottom" value="/WEB-INF/views/home/bottom.jsp" />
   </definition>
     <definition name="public:*/*.tiles" extends="public">

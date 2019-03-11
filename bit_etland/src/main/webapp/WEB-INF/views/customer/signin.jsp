@@ -10,8 +10,7 @@
 	    <div class="grid-item" id="item_1" >회원아이디</div>
 	    <div class="grid-item" id="item_2"><input type="text" id="customerID" name="customerID" ></div>
 	    <div class="grid-item" id="item_3" >비밀번호</div>
-	    <div class="grid-item" id="item_4">
-	    <input type="text" id="password" name="password"></div>
+	    <div class="grid-item" id="item_4"><input type="text" id="password" name="password"></div>
 	    <div class="grid-item" id="item_11">
 	    <input type="submit" id="confirm_btn"value='확 인' ></div>
 	    <div class="grid-item" id="item_12">
@@ -24,6 +23,7 @@
 </div>
 <script>
 $('#confirm_btn').click(function(){
+	
 	$('#form')
 	.attr('method','POST')
 	.attr('action', '${ctx}/customer/signin')

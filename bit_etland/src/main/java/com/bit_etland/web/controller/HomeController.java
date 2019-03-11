@@ -8,11 +8,14 @@ import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
+
+import com.bit_etland.web.proxy.ContextProxy;
 
 /**
  * Handles requests for the application home page.
@@ -21,17 +24,13 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @SessionAttributes({"ctx","css","js","img","time"})
 public class HomeController{
 	static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-
+	@Autowired ContextProxy pxy;
+	
 	@RequestMapping("/")
 	public String home(HttpSession session,
 			HttpServletRequest request){
 		logger.info("\n --------- Welcome {} !! ----------","Home");
-		String ctx = request.getContextPath();
-		session.setAttribute("ctx",ctx);
-		session.setAttribute("css", ctx+"/resources/css/");
-		session.setAttribute("js", ctx+"/resources/js/");
-		session.setAttribute("image", ctx+"/resources/img/");
-		session.setAttribute("time",new SimpleDateFormat("yyyy-MM-dd hh:mm").format(new Date()));
+		pxy.setContext();
 		return "public:home/main.tiles";
 	}
 	@RequestMapping("/move/{dir}/{page}") //URL을 뜻한다
