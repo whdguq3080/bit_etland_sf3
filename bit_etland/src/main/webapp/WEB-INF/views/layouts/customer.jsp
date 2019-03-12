@@ -8,6 +8,7 @@
 	@기능: 고객 탬플릿 페이지
 	-->
 <jsp:include page="common.jsp"></jsp:include>
+<link rel="stylesheet" href="${css}/style.css "/>
 <body>
 
 </body>
