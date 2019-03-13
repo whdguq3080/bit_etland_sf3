@@ -5,27 +5,28 @@
 	@파일 이름: *.jsp
 	@기능:
 	-->
+
+<!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Maxim - Modern One Page Bootstrap Template</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="BootstrapMade.com">
-<meta name="author" content="BootstrapMade.com">
-<link href="${css}/bootstrap-responsive.css" rel="stylesheet">
-<link href="${css}/style.css" rel="stylesheet">
-<link href="${css}/flexslider.css" rel="stylesheet">
-<link href="${css}/animate.css" rel="stylesheet">
-<link href="${css}/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="${css}/color/default.css" rel="stylesheet">
-<link rel="shortcut icon" href="${css}/img/favicon.ico">
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
-<script src="${js}/app.js"></script>
+	<meta charset="utf-8">
+	<title>Maxim - Modern One Page Bootstrap Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="resources/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="resources/css/style.css" rel="stylesheet">
+	<link href="resources/color/default.css" rel="stylesheet">
+	<link rel="resources/shortcut icon" href="img/favicon.ico">
+	<!-- =======================================================
+    Theme Name: Maxim
+    Theme URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+	======================================================= -->
 </head>
+
 <body>
 	<!-- navbar -->
 	<div class="navbar-wrapper">
@@ -39,6 +40,7 @@
 					<!-- navigation -->
 					<nav class="pull-right nav-collapse collapse">
 						<ul id="menu-main" class="nav">
+							<li><a title="login" href="#login">Login</a></li>
 							<li><a title="team" href="#about">About</a></li>
 							<li><a title="services" href="#services">Services</a></li>
 							<li><a title="works" href="#works">Works</a></li>
@@ -60,7 +62,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">
-						<div id="main-flexslider" class="main-flexslider">
+						<div id="main-flexslider" class="flexslider">
 							<ul class="slides">
 								<li>
 									<p class="home-slide-content">
@@ -253,7 +255,6 @@
 						</li>
 					</ul>
 				</div>
-				</div>
 				<!-- END PORTFOLIO FILTERING -->
 			</div>
 			<div class="row">
@@ -262,7 +263,7 @@
 						<!-- portfolio item -->
 						<div class="portfolio-item grid print photography">
 							<div class="portfolio">
-						<a href="resources/img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+								<a href="resources/img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
 						<img src="resources/img/works/1.png" alt="" />
 						<div class="portfolio-overlay">
 							<div class="thumb-info">
@@ -271,7 +272,7 @@
 							</div>
 						</div>
 						</a>
-						</div>
+							</div>
 						</div>
 						<!-- end portfolio item -->
 						<!-- portfolio item -->
@@ -283,10 +284,10 @@
 							<div class="thumb-info">
 								<h5>Portfolio name</h5>
 								<i class="icon-plus icon-2x"></i>
-								</div>
+							</div>
 						</div>
 						</a>
-						</div>
+							</div>
 						</div>
 						<!-- end portfolio item -->
 						<!-- portfolio item -->
@@ -298,10 +299,10 @@
 							<div class="thumb-info">
 								<h5>Portfolio name</h5>
 								<i class="icon-plus icon-2x"></i>
-								</div>
+							</div>
 						</div>
 						</a>
-						</div>
+							</div>
 						</div>
 						<!-- end portfolio item -->
 						<!-- portfolio item -->
@@ -316,7 +317,7 @@
 							</div>
 						</div>
 						</a>
-						</div>
+							</div>
 						</div>
 						<!-- end portfolio item -->
 						<!-- portfolio item -->
@@ -331,7 +332,7 @@
 							</div>
 						</div>
 						</a>
-						</div>
+							</div>
 						</div>
 						<!-- end portfolio item -->
 						<!-- portfolio item -->
@@ -346,7 +347,7 @@
 							</div>
 						</div>
 						</a>
-						</div>
+							</div>
 						</div>
 						<!-- end portfolio item -->
 						<!-- portfolio item -->
@@ -396,8 +397,8 @@
 						<!-- end portfolio item -->
 						<!-- portfolio item -->
 						<div class="portfolio-item grid design web">
-						<div class="portfolio">
-						<a href="resources/img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+							<div class="portfolio">
+								<a href="resources/img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
 						<img src="resources/img/works/10.png" alt="" />
 						<div class="portfolio-overlay">
 							<div class="thumb-info">
@@ -406,7 +407,7 @@
 							</div>
 						</div>
 						</a>
-						</div>
+							</div>
 						</div>
 						<!-- end portfolio item -->
 					</div>
@@ -595,18 +596,23 @@
 		<!-- ./container -->
 	</footer>
 	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/jquery.nav.js"></script>
-	<script src="js/jquery.localScroll.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/jquery.prettyPhoto.js"></script>
-	<script src="js/isotope.js"></script>
-	<script src="js/jquery.flexslider.js"></script>
-	<script src="js/inview.js"></script>
-	<script src="js/animate.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="contactform/contactform.js"></script>
+	<script src="resources/js/jquery.js"></script>
+	<script src="resources/js/jquery.scrollTo.js"></script>
+	<script src="resources/js/jquery.nav.js"></script>
+	<script src="resources/js/jquery.localScroll.js"></script>
+	<script src="resources/js/bootstrap.js"></script>
+	<script src="resources/js/jquery.prettyPhoto.js"></script>
+	<script src="resources/js/isotope.js"></script>
+	<script src="resources/js/jquery.flexslider.js"></script>
+	<script src="resources/js/inview.js"></script>
+	<script src="resources/js/animate.js"></script>
+	<script src="resources/js/custom.js"></script>
+	<script src="resources/contactform/contactform.js"></script>
+
+</body>
+
+</html>
+
 	<script>app.context.init('${ctx}')</script>
 </body>
 </html>

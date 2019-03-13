@@ -371,7 +371,7 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background: #444 url(/web/resources/img/bg/bg-1.jpg) no-repeat center center fixed;
+	background: #444 url(../img/bg/bg-1.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -491,14 +491,14 @@ section.spacer {
 }
 
 section.spacer.bg2 {
-	background: url(/web/resources/img/bg/bg-1.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/bg/bg-2.jpg) 50% 0 no-repeat fixed;
 	width:100%;
 	height:auto;
 	margin:0;	
 }
 
 section.spacer.bg3 {
-	background: url(/web/resources/img/bg/bg-1.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/bg/bg-3.jpg) 50% 0 no-repeat fixed;
 	width:100%;
 	height:auto;
 	margin:0;	
