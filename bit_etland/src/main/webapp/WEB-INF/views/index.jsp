@@ -11,14 +11,15 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Maxim - Modern One Page Bootstrap Template</title>
+	<!-- <title>Maxim - Modern One Page Bootstrap Template</title> -->
+	<title>BIT RETAIL</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link href="resources/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="resources/css/style.css" rel="stylesheet">
 	<link href="resources/color/default.css" rel="stylesheet">
-	<link rel="resources/shortcut icon" href="img/favicon.ico">
+	<link rel="resources/shortcut icon" href="resources/img/favicon.ico">
 	<!-- =======================================================
     Theme Name: Maxim
     Theme URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
@@ -40,7 +41,7 @@
 					<!-- navigation -->
 					<nav class="pull-right nav-collapse collapse">
 						<ul id="menu-main" class="nav">
-							<li><a title="login" href="#login">Login</a></li>
+							<li><a title="login" href="${ctx}/move/customer/signin">Login</a></li>
 							<li><a title="team" href="#about">About</a></li>
 							<li><a title="services" href="#services">Services</a></li>
 							<li><a title="works" href="#works">Works</a></li>
@@ -608,11 +609,8 @@
 	<script src="resources/js/animate.js"></script>
 	<script src="resources/js/custom.js"></script>
 	<script src="resources/contactform/contactform.js"></script>
-
-</body>
-
-</html>
-
-	<script>app.context.init('${ctx}')</script>
+	<script src="${js}/app.js"></script>
+	
+<script>app.path.init('${ctx}')</script>
 </body>
 </html>
