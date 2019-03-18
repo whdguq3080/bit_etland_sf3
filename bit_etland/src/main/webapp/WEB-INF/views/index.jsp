@@ -609,8 +609,8 @@
 	<script src="resources/js/animate.js"></script>
 	<script src="resources/js/custom.js"></script>
 	<script src="resources/contactform/contactform.js"></script>
-	<script src="${js}/app.js"></script>
+	<script src="${js}/algorithm.js"></script>
 	
-<script>app.path.init('${ctx}')</script>
+<script>algorithm.init('${ctx}')</script>
 </body>
 </html>
