@@ -5,7 +5,6 @@ algorithm = (()=>{
 		algorithm.$.init(x);
 	};	
 	let onCreate = () => {
-		
 		setContentView();
 	};	
 	let setContentView = () => {
@@ -17,15 +16,49 @@ algorithm = (()=>{
 			$('#nav').children().eq(2)
 			.html($$.a({id:'sort',url:'#'}).text('배열'));
 			$('#nav').children().eq(3)
-			.html($$.a({id:'arr',url:'#'}).text('정렬'));
-			$('#nav').append($$.li({id:''}))
-			.children().eq(4).html($$.a({id:'app'}).text('응용'));
+			.html($$.a({id:'coll',url:'#'}).text('자료구조'));
+			$('#nav').append($$.li({id:''})).children().eq(4)
+			.html($$.a({id:'app'}).text('응용'));
+			$('#que_1').text('등차수열의 합계');
+			$('#que_2').text('등비수열의 합계');
 			
-			$('#que_1').text('수열 1 - 1+2+3+4+…+100까지의 합계 (do~while)');
-			$('#que_2').text('수열 2 - 1-2+3-4+5-6+…+99-100의 합계 (do~while, while, if)');
+			inputForm();
+			$('#answer_btn_1').text('result').addClass('cursor').click(()=>{			
+			$.ajax({
+			url : $.ctx()+'/algo/seq/1',
+			type : 'post',
+			data :  JSON.stringify(
+					{start: $('#start').val(),
+						 end: $('#end').val(),
+						 diff: $('#diff').val()}),
+			datatype : 'json',
+			contentType : "application/json",
+			success : d=>{
+				$('#answer').html($$.h({id:'h_res',num:'2'})
+							.text('결과값:' + d.result));
+			},
+			error : e=>{
+				alert('AJAX 실패');
+			}
+			});
 		});
-	};
-	return {init:init,
+	$('#answer_btn_2').text('reset').addClass('cursor')
+	.click(()=>{
+		inputForm();
+	});
+})
+};
+let inputForm = ()=> {	
+	$('#answer').html($$.label({id:'lab_1'}).text('시작값 :'));
+	$('#answer').append($$.input({type:'text',id:'start',name:'start'}));
+	$('#answer').append($$.label({id:'lab_2'}).text('end 값:'));
+	$('#answer').append($$.input({type:'text',id:'end',name:'end'}));
+	$('#answer').append($$.label({id:'lab_3'}).text('공차'));
+	$('#answer').append($$.input({type:'text',id:'diff',name:'diff'}));
+}	
+
+
+return {init:init,
 			onCreate:onCreate};
 })();
 /*수열 1 - 1+2+3+4+…+100까지의 합계 (do~while) */

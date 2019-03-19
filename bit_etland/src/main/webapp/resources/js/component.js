@@ -11,5 +11,14 @@ $$ = {
 		},
 		h : x=>{
 			return $('<h'+x.num+' id='+x.id+'/>');
+		},
+		form : x=>{
+			return $('<form/>');
+		},
+		label : x=>{
+			return $('<label for='+x.name+'/>')
+		},
+		input : x=>{
+			return $('<input type='+x.type+' id='+x.id+' name='+x.name+'/>')
 		}
 }
