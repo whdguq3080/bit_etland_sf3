@@ -21,6 +21,11 @@ algorithm = (()=>{
 			.html($$.a({id:'app'}).text('응용'));
 			$('#que_1').text('등차수열의 합계');
 			$('#que_2').text('등비수열의 합계');
+				
+			//-------remove-----------
+			/*$('#del_start').before('<div id="start"/>');	
+			$('#del_end').after('<div id="end"/>');	
+			$('#start').nextUntil('#end').wrap().remove();	*/
 			
 			inputForm();
 			$('#answer_btn_1').text('result').addClass('cursor').click(()=>{			
@@ -44,8 +49,9 @@ algorithm = (()=>{
 		});
 	$('#answer_btn_2').text('reset').addClass('cursor')
 	.click(()=>{
-		inputForm();
+	inputForm();
 	});
+
 })
 };
 let inputForm = ()=> {	
@@ -55,13 +61,12 @@ let inputForm = ()=> {
 	$('#answer').append($$.input({type:'text',id:'end',name:'end'}));
 	$('#answer').append($$.label({id:'lab_3'}).text('공차'));
 	$('#answer').append($$.input({type:'text',id:'diff',name:'diff'}));
-}	
+};	
 
 
 return {init:init,
 			onCreate:onCreate};
 })();
-/*수열 1 - 1+2+3+4+…+100까지의 합계 (do~while) */
 algorithm.$ = {	
 			init : (x) => {
 				$.getScript(x+'/resources/js/router.js',()=>{
