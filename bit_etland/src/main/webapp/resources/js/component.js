@@ -20,5 +20,8 @@ $$ = {
 		},
 		input : x=>{
 			return $('<input type='+x.type+' id='+x.id+' name='+x.name+'/>')
+		},
+		span : x=>{
+			return $('<span id='+x.id+'/>')
 		}
 }

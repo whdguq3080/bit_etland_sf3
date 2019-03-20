@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <div class="col-sm-9">
+    <div id="right_content" class="col-sm-9">
       <h4><small>RECENT POSTS</small></h4>
       <hr>
       <h2 id ="que_1">I Love Food</h2>
@@ -83,7 +83,7 @@
       <p class="rm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr id="del_end">
       
-      <h4>Leave a Comment:</h4>
+      <h4 id="leave_a_comment">Leave a Comment:</h4>
       <form role="form">
         <div class="form-group">
           <textarea class="form-control" rows="3" required></textarea>
