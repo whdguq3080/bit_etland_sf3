@@ -3,7 +3,6 @@ var app = app || {};
 app.path = (()=>{
 	var init = (x) =>{
 		app.session.init(x);
-		alert(app.$.ctx());
 		onCreate();
 	};
 	var onCreate = () =>{

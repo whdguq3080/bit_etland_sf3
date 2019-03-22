@@ -1,6 +1,5 @@
-function sequence(){
-	$$.nav();
-	_sequence.remove();
+function math(){
+	_math.remove();
 	$('#right_content').prepend($$.div({id:'right_start'}));
 	$('#leave_a_comment').before('<div id="right_end"/>')
 	$('#right_start').nextUntil('#right_end')
@@ -9,10 +8,10 @@ function sequence(){
 	$('#new_div').remove();
 	$('#right_end').remove();
 	let arr = [
-		{id:'ari' ,val:'등차수열의 합계'},
-		{id:'geo' ,val:'등비수열의 합계'},
-		{id:'fac' ,val:'팩토리얼수열의 합계'},
-		{id:'fibo' ,val:'피보나치수열의 합계'},
+		{id:'count' ,val:'Count 알고리즘'},
+		{id:'maxmin' ,val:'최댓값과 최솟값 '},
+		{id:'sum' ,val:'합계와 평균'},
+		{id:'decide' ,val:'소수 판별'},
 		];
 	$.each(arr,(i,j)=>{
 		let GID = Math.floor(Math.random() * 10000) + 1;
@@ -44,7 +43,7 @@ function sequence(){
 		let x = [{cls: 'start', txt: '시작값'},
 			 	{cls: 'end', txt: '한계값'},
 			 	{cls: 'diff', txt: '공차'}];
-		$(_sequence.inputForm(x)).appendTo(_INPUT);
+		$(_math.inputForm(x)).appendTo(_INPUT);
 		$('#del_start').remove();
 		$('#del_end').remove();
 		$('<span class="label label-danger"></span>')
@@ -80,13 +79,13 @@ function sequence(){
 		.appendTo(_BTN)
 		.click(()=>{
 			$(_INPUT).empty();
-			$(_sequence.inputForm(x))
+			$(_math.inputForm(x))
 				.appendTo(_INPUT);
 		}); // 리셋 보기 버튼
 		
 	});
 } 
-var _sequence = {
+var _math = {
 		inputForm : (x)=>{
 			let html = '<form>';
 			$.each(x, (i, j)=>{
